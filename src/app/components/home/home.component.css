@@ -62,17 +62,6 @@ h3 {
   filter: blur(20px) brightness(0.7);
 }
 
-.paragraph {
-  height: 34px;
-  overflow: hidden;
-  transition: all 1s ease-in-out;
-}
-
-.paragraph:hover {
-  height: 210px;
-  clip-path: circle(100%);
-}
-
 .fade-in {
   opacity: 0;
   transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
