@@ -14,29 +14,8 @@ export class HomeComponent {
 
   constructor() {}
 
-  ngAfterViewChecked() {
-    setTimeout(() => {
-      this.showElement('.digital', () => {
-        setTimeout(() => {
-          this.showElement('.heroP');
-        }, 1500);
-      });
-    }),
-      1000;
-  }
-
   ngAfterViewInit() {
     this.fadeIn();
-  }
-
-  private showElement(selector: string, callback?: () => void) {
-    const element = document.querySelector(selector);
-    if (element) {
-      element.classList.add('show');
-    }
-    if (callback) {
-      callback();
-    }
   }
 
   fadeIn(): void {

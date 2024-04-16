@@ -23,7 +23,7 @@ filter: brightness(0.9);}
 .digital {
   font-family: 'Orbitron', sans-serif;
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .digital,
@@ -40,10 +40,6 @@ h3 {
 .heroP {
   opacity: 0;
   transition: opacity 2s ease-in-out;
-}
-
-.show {
-  opacity: 1;
 }
 
 .myImg {
