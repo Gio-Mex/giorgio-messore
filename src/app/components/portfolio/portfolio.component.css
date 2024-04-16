@@ -1,0 +1,120 @@
+body {
+  color: white;
+  font-family: 'Red Hat Text', sans-serif;
+  cursor: default;
+}
+
+.hero {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.heroImg {
+  height: 700px;
+  object-fit: cover;
+}
+
+.mask {
+  background: #000;
+}
+
+h2,
+h3 {
+  background: linear-gradient(to right, #0dcaf0, #f37209);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.decoration {
+  width: 90%;
+  height: 50px;
+  background: linear-gradient(45deg,#0dcaf0, #f37209);
+  filter: blur(20px) brightness(0.7);
+}
+
+.card {
+  max-width: 650px;
+  background-color: #000;
+}
+
+.card img {
+  max-height: 260px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 24
+}
+
+.fade-in {
+  opacity: 0;
+  transition: all 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.fade-in.in-page {
+  opacity: 1;
+}
+
+.faUp {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  h2 {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 3rem;
+  }
+  .heroImg {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0% 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+  span {
+    font-size: 5rem;
+  }
+
+  .heroImg {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position:0% 65%;
+  }
+}
+
+@media (min-width: 920px) and (max-width: 1024px) {
+
+  span {
+    font-size: 6rem;
+  }
+  .heroImg {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position:0% 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  h2 {
+    font-size: 3rem;
+  }
+  .heroImg {
+    width: 60%;
+    height: 750px;
+    object-fit: cover;
+    object-position:0% 65%;
+  }
+}

@@ -1,0 +1,147 @@
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  color: white; 
+  background: #000;
+  cursor: default;
+}
+
+.hero{
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.heroImg {
+filter: brightness(0.9);}
+
+.mask{
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 10%);
+}
+
+.mask1{
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 1%,rgba(0,0,0,0) 80%);
+}
+
+.digital {
+  font-family: 'Orbitron', sans-serif;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.digital,
+.soft-skills,
+.hard-skills,
+h2,
+h3 {
+  background: linear-gradient(to bottom, #0dcaf0, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroP {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.myImg {
+  object-fit: cover;
+  object-position: 0px 15px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color:#d0f2ff;
+}
+
+.decoration {
+  width: 90%;
+  height: 50px;
+  background: linear-gradient(to left, #0d80f3, #0dcaf0);
+  filter: blur(20px) brightness(0.7);
+}
+
+.paragraph {
+  height: 34px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}
+
+.paragraph:hover {
+  height: 210px;
+  clip-path: circle(100%);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(-10vw);
+  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.fade-in-left{
+  opacity: 0;
+  transform: translateX(10vw);
+  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.fade-in.in-page,
+.fade-in-right.in-page,
+.fade-in-left.in-page {
+  opacity: 1;
+  transform: translateX(0vw);
+}
+
+.faUp {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .hero {
+    height: 500px;
+    margin-top: 40%;
+  }
+
+  .myImg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 912px) {
+  .hero {
+    height: 600px;
+    margin-top: 50%;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1024px) {
+  .hero {
+    height: 900px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {
+  .hero {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1240px) and (max-width: 1440px) {
+  .hero {
+    height: 950px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    height: 1300px;
+  }
+}

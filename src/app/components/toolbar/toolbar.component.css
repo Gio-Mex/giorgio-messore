@@ -1,0 +1,18 @@
+* {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+nav {
+  background-color: #000;
+}
+
+a {
+  background: linear-gradient(to bottom, #0dcaf0, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.offcanvas {
+  background-color: #000;
+  transition: all 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
