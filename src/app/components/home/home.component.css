@@ -33,6 +33,7 @@ h2,
 h3 {
   background: linear-gradient(to bottom, #0dcaf0, #fff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
