@@ -20,12 +20,6 @@ filter: brightness(0.9);}
   background: linear-gradient(to bottom, rgba(0,0,0,1) 1%,rgba(0,0,0,0) 80%);
 }
 
-.digital {
-  font-family: 'Orbitron', sans-serif;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
 .digital,
 .soft-skills,
 .hard-skills,
@@ -35,11 +29,6 @@ h3 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.heroP {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
 }
 
 .myImg {
@@ -60,19 +49,19 @@ h3 {
 
 .fade-in {
   opacity: 0;
-  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .fade-in-right {
   opacity: 0;
   transform: translateX(-10vw);
-  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-.fade-in-left{
+.fade-in-left {
   opacity: 0;
   transform: translateX(10vw);
-  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .fade-in.in-page,
