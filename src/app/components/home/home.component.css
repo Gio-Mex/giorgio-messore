@@ -49,19 +49,19 @@ h3 {
 
 .fade-in {
   opacity: 0;
-  transition: all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .fade-in-right {
   opacity: 0;
   transform: translateX(-10vw);
-  transition: all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .fade-in-left {
   opacity: 0;
   transform: translateX(10vw);
-  transition: all 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .fade-in.in-page,
