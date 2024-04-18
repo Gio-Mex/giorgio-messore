@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faReadme } from '@fortawesome/free-brands-svg-icons';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -9,7 +9,7 @@ import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
 })
 export class HomeComponent {
   digital: any;
-  faReadme = faReadme;
+  faCircle = faCircle;
   faUp = faCircleUp;
 
   constructor() {}

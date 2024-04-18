@@ -30,7 +30,7 @@ h3 {
   width: 90%;
   height: 50px;
   background: linear-gradient(45deg,#0dcaf0, #f37209);
-  filter: blur(20px) brightness(0.7);
+  filter: blur(10px) brightness(0.7);
 }
 
 .card {
@@ -107,7 +107,7 @@ h3 {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
 
   h2 {
     font-size: 3rem;
@@ -115,6 +115,20 @@ h3 {
   .heroImg {
     width: 60%;
     height: 750px;
+    object-fit: cover;
+    object-position:0% 65%;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .heroImg {
+    width: 60%;
+    height: 900px;
     object-fit: cover;
     object-position:0% 65%;
   }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -7,6 +8,7 @@ import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
+  faCircle = faCircle;
   faUp = faCircleUp;
 
   ngAfterViewInit() {
@@ -25,7 +27,7 @@ export class PortfolioComponent {
       });
     };
     const observer = new IntersectionObserver(func, {
-      threshold: 0.4,
+      threshold: 0.3,
     });
     elements.forEach((element) => {
       observer.observe(element);

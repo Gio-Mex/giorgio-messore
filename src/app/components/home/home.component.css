@@ -44,10 +44,15 @@ h3 {
   background-color:#d0f2ff;
 }
 
+.filter {
+  max-height: 400px;
+  filter: grayscale(100%);
+}
+
 .decoration {
   width: 90%;
   background: linear-gradient(45deg, #0d80f3, #0dcaf0);
-  filter: blur(20px) brightness(0.7);
+  filter: blur(10px) brightness(0.7);
 }
 
 .fade-in {
@@ -81,6 +86,7 @@ h3 {
   cursor: pointer;
 }
 
+
 @media (max-width: 540px) {
   .hero {
     height: 500px;
@@ -91,12 +97,28 @@ h3 {
     width: 150px;
     height: 150px;
   }
+  
+  .card{
+    width: 280px;
+  }
+
+  .softSkillsImg1 {
+    max-height: 200px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 912px) {
   .hero {
     height: 600px;
     margin-top: 50%;
+  }
+
+  .softSkillsImg1 {
+    max-height: 260px;
+  }
+
+  .card-title{
+    font-size: 1rem;
   }
 }
 
@@ -110,16 +132,54 @@ h3 {
   .hero {
     height: 700px;
   }
+
+  .softSkillsImg1 {
+    max-height: 280px;
+  }
 }
 
 @media (min-width: 1240px) and (max-width: 1440px) {
   .hero {
     height: 950px;
   }
+
+  .softSkillsImg1 {
+    max-height: 300px;
+  }
+
+  .hardSkillImg {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1440px) {
+  
+  .hero p,
+  .hero span{
+    font-size: 6rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
   .hero {
     height: 1300px;
+  }
+
+  .hardSkillImg {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 2rem;
   }
 }
