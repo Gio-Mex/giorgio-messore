@@ -9,9 +9,9 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-between nav-underline">
+        <ul class="navbar-nav justify-content-between nav-underline" (click)="closeOffcanvas()">
           <li class="nav-item">
-            <a class="nav-link fs-5 text-white mx-3" routerLink="/home">Home</a>
+            <a class="nav-link text-white fs-5 mx-3" routerLink="/home" >Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white fs-5 mx-3" routerLink="/portfolio">Portfolio</a>
