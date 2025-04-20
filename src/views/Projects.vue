@@ -48,7 +48,7 @@ onMounted(() => {
     </h1>
   </section>
   <section class="relative min-h-screen text-white">
-    <div class="flex flex-row h-[1200] justify-center">
+    <div class="flex flex-row min-h-screen justify-center">
       <!-- Left column -->
       <div class="lg:w-1/2 md:px-20 lg:px-3 my-10 flex flex-col items-center">
         <div
@@ -58,7 +58,7 @@ onMounted(() => {
           class="h-screen flex items-center mb-28 opacity-0 transition-opacity duration-700 fade-card"
         >
           <div
-            class="realtive max-w-3xl bg-blue-500/5 border border-white/10 rounded-xl p-7 lg:px-12 lg:py-10 mx-2 lg:mb-0 shadow-md backdrop-blur-sm"
+            class="realtive max-w-3xl bg-blue-500/5 border border-white/10 rounded-xl p-7 md:px-12 md:py-10 mx-2 lg:mb-0 shadow-md backdrop-blur-sm"
           >
             <span
               class="absolute top-4 right-3.5 p-2 bg-black rounded-full border-s border-indigo-400"
@@ -68,7 +68,12 @@ onMounted(() => {
             <h3 class="animated-gradient text-2xl font-semibold mb-3">
               {{ project.title }}
             </h3>
-            <img v-if="windowWidth < 1024" :src="project.thumbnail" alt="Project thumbnail" class="mb-3">
+            <img
+              v-if="windowWidth < 1024"
+              :src="project.thumbnail"
+              alt="Project thumbnail"
+              class="mb-3"
+            />
             <p class="whitespace-pre-line mb-6">{{ project.description }}</p>
             <p class="text-blue-500 font-bold mb-2">Project requirements:</p>
             <ul class="list-disc list-inside text-indigo-200 text-sm space-y-3">
@@ -96,7 +101,10 @@ onMounted(() => {
       </div>
 
       <!-- Right column -->
-      <div v-if="windowWidth >= 1024" class="w-1/2 h-screen sticky top-0 flex items-center justify-center px-3">
+      <div
+        v-if="windowWidth >= 1024"
+        class="w-1/2 h-screen sticky top-0 flex items-center justify-center px-3"
+      >
         <!-- PC container (only on desktop) -->
         <div class="relative w-[500px] h-[400px] xl:scale-150 rounded-lg">
           <!-- PC frame -->
