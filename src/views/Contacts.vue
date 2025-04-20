@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, ref } from "vue";
 import { Icon } from "@iconify/vue";
+import bgImage from "@/assets/img/bg-abstract.png";
 import socials from "@/assets/contents/contactsContent.js";
 
 const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
@@ -41,15 +42,21 @@ const handleSubmit = async () => {
     isLoading.value = false;
   }
 };
-
 </script>
 <template>
-  <div class="mt-4 mb-6 pt-20" >
-   <h2 class="text-4xl font-semibold text-center">Get <span class="animated-gradient">in touch</span>.</h2> 
+  <div
+    class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
+    :style="{ backgroundImage: `url(${bgImage})` }"
+  ></div>
+  <div class="mt-4 mb-6 pt-20">
+    <h2 class="text-4xl font-semibold text-center">
+      Get <span class="animated-gradient">in touch</span>.
+    </h2>
   </div>
 
-  <div class="max-w-xl mt-4 mx-2 p-6 flex justify-self-center rounded-lg shadow-lg shadow-blue-500 border border-indigo-300">
-    
+  <div
+    class="max-w-xl mt-4 mx-2 p-6 flex justify-self-center rounded-lg shadow-lg shadow-blue-500 border border-indigo-300 backdrop-blur-md"
+  >
     <form @submit.prevent="handleSubmit" class="space-y-5">
       <input
         type="text"
@@ -83,14 +90,15 @@ const handleSubmit = async () => {
           class="mt-1"
         />
         <label for="privacy">
-          I have read and accept the <span
-          href="/privacy-policy"
-          target="_blank"
-          class="text-indigo-500 underline hover:text-blue-600 cursor-pointer"
-          @click="$router.push('/privacy-policy')"
-        >
-          Privacy Policy</span
-        >.
+          I have read and accept the
+          <span
+            href="/privacy-policy"
+            target="_blank"
+            class="text-indigo-500 underline hover:text-blue-600 cursor-pointer"
+            @click="$router.push('/privacy-policy')"
+          >
+            Privacy Policy</span
+          >.
         </label>
       </div>
 
@@ -116,10 +124,20 @@ const handleSubmit = async () => {
   </div>
 
   <section>
-      <div class="max-w-xl my-12 mx-2 flex justify-self-center gap-12">
-        <a v-for="social in socials" :key="social.name" :href="social.link" target="_blank">
-          <Icon :icon="social.icon" width="40" height="40" class="text-blue-500 hover:scale-110 transition hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]" />
-        </a>
-          </div>
-    </section>
+    <div class="max-w-xl my-12 mx-2 flex justify-self-center gap-12">
+      <a
+        v-for="social in socials"
+        :key="social.name"
+        :href="social.link"
+        target="_blank"
+      >
+        <Icon
+          :icon="social.icon"
+          width="40"
+          height="40"
+          class="text-blue-500 hover:scale-110 transition hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
+        />
+      </a>
+    </div>
+  </section>
 </template>
