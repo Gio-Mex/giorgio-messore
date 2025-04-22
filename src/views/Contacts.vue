@@ -123,8 +123,8 @@ const handleSubmit = async () => {
     </form>
   </div>
 
-  <section>
-    <div class="max-w-xl my-12 mx-2 flex justify-self-center gap-12">
+  <section class="flex justify-center">
+    <div class="max-w-xl mt-12 mb-6 mx-2 flex space-x-12">
       <a
         v-for="social in socials"
         :key="social.name"
