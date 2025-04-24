@@ -1,4 +1,3 @@
-
 <template>
   <div class="max-w-3xl mx-auto my-15 p-8 text-white/80">
     <h1 class="text-3xl animated-gradient font-semibold mb-6">Privacy Policy</h1>
