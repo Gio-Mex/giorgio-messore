@@ -42,7 +42,7 @@ export default {
     { name: "CSS", icon: "mdi:language-css3" },
     { name: "JavaScript", icon: "mdi:language-javascript" },
     { name: "TypeScript", icon: "mdi:language-typescript" },
-    { name: "Vue", icon: "mdi:vuejs" },
+    { name: "Vue.js", icon: "mdi:vuejs" },
     { name: "React", icon: "mdi:react" },
     { name: "Angular", icon: "mdi:angular" },
     { name: "Node.js", icon: "mdi:nodejs" },

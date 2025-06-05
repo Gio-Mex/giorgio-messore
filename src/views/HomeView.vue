@@ -68,9 +68,9 @@ onMounted(() => {
           class="flex flex-col items-start backdrop-blur-sm bg-indigo-500/5 border border-white/10 rounded-xl p-6 shadow-md transition-transform hover:scale-105 duration-300 hover:shadow-blue-500/50"
         >
           <h3
-            class="text-indigo-400 text-lg font-semibold mb-2 flex items-center gap-2 mx-auto"
+            class="text-indigo-400 text-lg font-semibold mb-2 flex items-center mx-auto"
           >
-            {{ skill.title }} <span>{{ skill.icon }}</span>
+            {{ skill.icon }} {{ skill.title }}
           </h3>
           <p class="text-sm text-white/90">{{ skill.description }}</p>
         </div>

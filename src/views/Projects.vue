@@ -61,9 +61,16 @@ onMounted(() => {
             class="realtive max-w-3xl bg-blue-500/5 border border-white/10 rounded-xl p-7 md:px-12 md:py-10 mx-2 lg:mb-0 shadow-md backdrop-blur-sm"
           >
             <span
-              class="absolute top-4 right-3.5 p-2 bg-black rounded-full border-s border-indigo-400"
+              class="absolute flex top-4 right-3 p-2 "
             >
-              <Icon :icon="project.bedge" width="24" height="24" />
+              <Icon
+                v-for="(bedge, i) in project.bedges"
+                :key="i"
+                :icon="project.bedges[i]"
+                width="38"
+                height="38"
+                class="bg-black rounded-full border-s border-indigo-400 py-2 mr-1"
+              />
             </span>
             <h3 class="animated-gradient text-2xl font-semibold mb-3">
               {{ project.title }}
@@ -75,9 +82,9 @@ onMounted(() => {
               class="mb-3"
             />
             <p class="whitespace-pre-line mb-6">{{ project.description }}</p>
-            <p class="text-blue-500 font-bold mb-2">Project requirements:</p>
+            <p class="text-blue-500 font-bold mb-2">Project features:</p>
             <ul class="list-disc list-inside text-indigo-200 text-sm space-y-3">
-              <li v-for="(req, i) in project.requirements" :key="i">
+              <li v-for="(req, i) in project.features" :key="i">
                 {{ req }}
               </li>
             </ul>
