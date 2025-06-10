@@ -30,9 +30,9 @@ const curriculum = [
     ],
   },
   {
-    period: "2023",
+    period: "From 2023 to 2025",
     title: "START2IMPACT UNIVERSITY",
-    details: ["Studying to become a full stack developer"],
+    details: ["Master's degree in Full-Stack Development"],
   },
 ];
 </script>
@@ -42,18 +42,18 @@ const curriculum = [
     <div class="max-w-6xl mx-auto">
       <!-- Hero section -->
       <div
-        class="relative min-h-[240px] md:min-h-[450px] lg:min-h-[630px] w-full overflow-hidden"
+        class="relative min-h-[240px] md:min-h-[450px] lg:h-screen xl:h-[600px] w-full overflow-hidden"
       >
         <!-- Background image -->
         <img
           src="/src/assets/img/my-pic.png"
           alt="Giorgio Messore picture"
-          class="absolute top-0 -left-[61%] md:-left-[56%] lg:-left-[53.9%] h-full w-full object-cover object-top opacity-0 animate-fade-slide-in"
+          class="absolute top-0 -left-[61%] md:-left-[56%] lg:-left-[51.9%] h-full w-full object-contain opacity-0 animate-fade-slide-in"
         />
 
         <!-- Right side black gradient overlay -->
         <div
-          class="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-l from-black to-transparent"
+          class="absolute top-0 left-0 h-full w-1/3  bg-gradient-to-l from-black to-transparent"
         ></div>
 
         <!-- Text -->
@@ -115,7 +115,7 @@ const curriculum = [
       Curriculum
     </h2>
     <div class="relative">
-      <!-- Linea verticale -->
+
       <div
         v-if="windowWidth >= 768"
         class="absolute left-1/2 transform -translate-x-1/2 h-full border-l border-white-500"
@@ -127,7 +127,7 @@ const curriculum = [
           :key="index"
           class="flex flex-col md:flex-row justify-center items-center"
         >
-          <!-- Lato sinistro (pari) -->
+
           <div v-if="index % 2 === 0" class="w-full md:w-1/2 md:pe-10">
             <div
               class="max-w-sm text-white bg-indigo-500/5 border border-white/10 rounded-xl p-6 ms-auto shadow-md transition-transform hover:scale-105 duration-300 hover:shadow-blue-500/50"
@@ -145,7 +145,6 @@ const curriculum = [
             </div>
           </div>
 
-          <!-- Punto centrale -->
           <div
             v-if="index % 2 === 0 && windowWidth >= 768"
             class="hidden md:flex w-5 h-5 bg-indigo-500 rounded-full me-auto -translate-x-2.5"
@@ -155,7 +154,6 @@ const curriculum = [
             class="hidden md:flex w-5 h-5 bg-indigo-500 rounded-full ms-auto translate-x-2.5"
           ></div>
 
-          <!-- Lato destro (dispari) -->
           <div v-if="index % 2 !== 0" class="w-full md:w-1/2 md:ps-10">
             <div
               class="max-w-sm text-white bg-indigo-500/5 border border-white/10 rounded-xl p-6 me-auto shadow-md transition-transform hover:scale-105 duration-300 hover:shadow-blue-500/50"

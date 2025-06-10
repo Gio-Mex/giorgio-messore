@@ -32,18 +32,24 @@ onMounted(() => {
         titleVisible ? 'opacity-100' : 'opacity-0',
       ]"
     >
-      Hi 👋 <br v-if="windowWidth <= 920"> I'm Giorgio. <br>Your
+      Hi 👋 <br v-if="windowWidth <= 920" />
+      I'm Giorgio. <br />Your
       <span
         class="animated-gradient bg-clip-text text-transparent text-6xl xl:text-8xl"
       >
         web developer</span
       >.
     </h1>
-    <img
-      class="absolute top-0 right-0 mt-20 md:relative md:top-0 md:mt-0 md:h-[450px] xl:h-[700px] z-0 rounded-es-full md:rounded-s-full shadow-md hover:scale-105 hover:shadow-blue-500/50 transition-transform duration-500"
-      src="/src/assets/img/my-pic.png"
-      alt="developer"
-    />
+    <div class="relative h-[500] mt-20 rounded-es-full md:rounded-s-full shadow-md overflow-hidden hover:scale-105 hover:shadow-blue-500/50 transition-transform duration-500">
+      <div
+        class="absolute inset-0 bg-blue-800 opacity-10 z-50"
+      ></div>
+      <img
+        class="absolute top-0 right-0 md:relative md:top-0 md:mt-0 md:h-[450px] xl:h-[700px] z-10"
+        src="/src/assets/img/my-pic.png"
+        alt="developer"
+      />
+    </div>
   </section>
 
   <!-- Soft Skills -->
@@ -87,8 +93,8 @@ onMounted(() => {
         My hard skills
       </h2>
       <p class="mb-10">
-        Languages and frameworks I use to build fast, responsive and
-        modern web apps.
+        Languages and frameworks I use to build fast, responsive and modern web
+        apps.
       </p>
       <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
         <div

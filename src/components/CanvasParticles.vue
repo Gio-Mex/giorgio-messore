@@ -13,7 +13,7 @@
 
     <!-- Fade Bottom -->
     <div
-      class="fixed bottom-0 left-0 w-full h-32 pointer-events-none z-10 bg-gradient-to-t from-black to-transparent"
+      class="fixed bottom-0 left-0 w-full h-32 pointer-events-none z-20 bg-gradient-to-t from-black to-transparent"
     />
   </div>
 </template>
