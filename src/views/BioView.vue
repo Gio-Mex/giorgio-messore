@@ -48,7 +48,7 @@ const curriculum = [
         <img
           src="/src/assets/img/my-pic.png"
           alt="Giorgio Messore picture"
-          class="absolute top-0 -left-[61%] md:-left-[56%] lg:-left-[51.9%] h-full w-full object-contain opacity-0 animate-fade-slide-in"
+          class="absolute top-5 -left-[58%] md:-left-[54%] lg:-left-[51.9%] h-full w-full object-contain opacity-0 animate-fade-slide-in"
         />
 
         <!-- Right side black gradient overlay -->

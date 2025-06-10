@@ -25,10 +25,10 @@ onMounted(() => {
   ></div>
 
   <!-- Hero Section -->
-  <section class="relative flex items-center h-screen md:mt-0">
+  <section class="relative flex h-screen mt-15 md:mt-40 lg:mt-20">
     <h1
       :class="[
-        'absolute top-3/5 md:relative md:top-0 text-4xl md:text-5xl xl:text-7xl leading-normal font-semibold px-9 lg:text-end ms-auto transition-opacity duration-1000 ease-in-out z-10',
+        'absolute top-1/2 md:relative md:top-1/4 text-4xl md:text-6xl xl:text-7xl leading-normal font-semibold px-9 lg:text-end ms-auto transition-opacity duration-1000 ease-in-out z-10',
         titleVisible ? 'opacity-100' : 'opacity-0',
       ]"
     >
@@ -40,12 +40,12 @@ onMounted(() => {
         web developer</span
       >.
     </h1>
-    <div class="relative h-[500] mt-20 rounded-es-full md:rounded-s-full shadow-md overflow-hidden hover:scale-105 hover:shadow-blue-500/50 transition-transform duration-500">
+    <div class="relative h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] w-2/3 md:w-full lg:w-1/3 mt-10 ms-auto rounded-es-full rounded-s-full shadow-md overflow-hidden hover:scale-105 hover:shadow-blue-500/50 transition-transform duration-500">
       <div
         class="absolute inset-0 bg-blue-800 opacity-10 z-50"
       ></div>
       <img
-        class="absolute top-0 right-0 md:relative md:top-0 md:mt-0 md:h-[450px] xl:h-[700px] z-10"
+        class="absolute top-5 left-2 lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10"
         src="/src/assets/img/my-pic.png"
         alt="developer"
       />
