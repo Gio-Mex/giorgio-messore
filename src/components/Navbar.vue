@@ -83,23 +83,23 @@ watch(
         :class="menuOpen ? 'rotate-45 translate-y-2' : ''"
       ></span>
       <span
-        class="hamburger-line bg-indigo-500"
+        class="hamburger-line bg-indigo-500 z-10"
         :class="menuOpen ? 'opacity-0' : ''"
       ></span>
       <span
-        class="hamburger-line bg-blue-500"
+        class="hamburger-line bg-blue-500 z-10"
         :class="menuOpen ? '-rotate-45 -translate-y-2' : ''"
       ></span>
     </section>
   </nav>
   <!-- Mobile menu -->
   <div
-    class="fixed top-0 -right-full w-full h-full z-20 opacity-0 transition-opacity duration-300 ease-in-out"
+    class="fixed top-0 -right-full w-full h-full z-40 opacity-0 transition-opacity duration-300 ease-in-out"
     @click="menuOpen = false"
     :class="{ 'right-0 opacity-100 backdrop-blur-sm bg-blue-500/10': menuOpen }"
   >
     <section
-      class="fixed top-0 -right-full w-1/2 h-full bg-black z-30 flex flex-col items-center justify-start pt-26 gap-10 transi duration-300 ease-in-out"
+      class="fixed top-0 -right-full w-1/2 h-full bg-black z-50 flex flex-col items-center justify-start pt-26 gap-10 transition-all duration-300 ease-in-out"
       :class="{
         'right-0': menuOpen,
       }"
