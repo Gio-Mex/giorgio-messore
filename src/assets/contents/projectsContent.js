@@ -51,8 +51,7 @@ export default {
       features: [
         "Use of Hacker News API.",
         "Displaying of the latest news, with their general info.",
-        "Displaying only 10 news items at a time.",
-        "Using a button (Load more), view the info of the next 10 news items.",
+        "Displaying 10 news items at a time with pagination.",
       ],
       thumbnail: ngTechImg,
       siteLink: "https://ng-tech-d274a.web.app",
@@ -64,14 +63,12 @@ export default {
       description:
         "This app uses Spoonacular to search and view vegetarian recipes (up to 100 per query). Built with React, TypeScript, Tailwind, and Shadcn. Note: free usage has a daily search limit.",
       features: [
-        "A search bar to search for vegetarian recipes.",
-        "Search results must display the title and cover image of each recipe.",
-        "Clicking on a recipe should navigate to a dedicated page.",
-        "The UI and UX should be simple and easy to use.",
+        "A search bar to search recipes.",
+        "Displaying of list with the search results and respective cover images.",
+        "Possibility to consult the description of each recipe in a dedicated page.",
+        "UI and UX simple and easy to use. Responsive design.",
         "Implement unit tests with at least 60% coverage.",
-        "The app should have a well-structured and understandable layout.",
-        "The design must be responsive.",
-        "Bonus features: use React Router, Axios, React Hooks and Redux.",
+        "Other features: use React Router, Axios, React Hooks and Redux.",
       ],
       thumbnail: happieVeggieImg,
       siteLink: "https://happie-veggie.netlify.app",
@@ -96,10 +93,9 @@ export default {
       description:
         "This project reproduces the functioning of a hypothetical synthetic meat shop, with the product search function and shopping cart. It was developed with Vue.js in Typescript.",
       features: [
-        "The app must be optimized for mobile devices first, then adapt to larger screens.",
-        "Fetch product data (name, price, image, description) from an external API.",
+        "Optimized for mobile devices first.",
         "Display a list of all products retrieved from the API, with their name, price and image.",
-        "Clicking on a product should navigate to a dedicated page.",
+        "Possibility to navigate to a dedicated product page.",
         "Cart page with a list of all products added to the cart, that simulates buying them.",
       ],
       thumbnail: kreasShopImg,
@@ -112,8 +108,8 @@ export default {
       description:
         "This Wordpress project recreate a simple website for an hypothetical eco-friendly hotel. The theme was developed with both Gutenberg and custom CSS classes.",
       features: [
-        "Create a custom theme in Wordpress.",
-        "There must be a contact form.",
+        "Custom theme in Wordpress.",
+        "Contact form.",
       ],
       thumbnail: pomeliaHotelImg,
       repoLink: "https://github.com/Gio-Mex/pomelia-hotel",
@@ -143,7 +139,7 @@ export default {
         "Manage countries with a single name field (create, update, delete).",
         "Manage trips with countries and available seats (create, update, delete).",
         "Retrieve and filter trips by country and seat availability.",
-        "Use MySQL as the database.",
+        "Use MySQL database.",
       ],
       thumbnail: orizonImg,
       repoLink: "https://github.com/Gio-Mex/orizon-api",
