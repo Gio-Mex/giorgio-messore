@@ -49,6 +49,7 @@ onMounted(() => {
         class="absolute top-5 left-2 lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10"
         :src="myPic"
         alt="developer"
+        loading="eager"
       />
     </div>
   </section>

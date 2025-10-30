@@ -121,6 +121,7 @@ onMounted(() => {
             :src="pcImage"
             class="w-full h-full object-cover rounded-xl"
             alt="PC frame"
+            loading="eager"
           />
           <!-- Thumbnail inside the frame -->
           <div
