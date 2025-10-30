@@ -2,10 +2,11 @@
 import { ref, onMounted } from "vue";
 import { Icon } from "@iconify/vue";
 import CanvasParticles from "@/components/CanvasParticles.vue";
-import bgImage from "@/assets/img/bg-abstract.png";
+import bgImage from "@/assets/img/bg-abstract.webp";
 import content from "@/assets/contents/homeContent.js";
 
 const windowWidth = ref(window.innerWidth);
+const myPic = new URL("@/assets/img/my-pic.webp", import.meta.url);
 const softSkills = content.softSkills;
 const hardSkills = content.hardSkills;
 const titleVisible = ref(false);
@@ -46,7 +47,7 @@ onMounted(() => {
       ></div>
       <img
         class="absolute top-5 left-2 lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10"
-        src="/src/assets/img/my-pic.png"
+        :src="myPic"
         alt="developer"
       />
     </div>

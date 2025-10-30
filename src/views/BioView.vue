@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
+const myPic = new URL("@/assets/img/my-pic.webp", import.meta.url);
 const windowWidth = ref(window.innerWidth);
 
 const curriculum = [
@@ -46,7 +47,7 @@ const curriculum = [
       >
         <!-- Background image -->
         <img
-          src="/src/assets/img/my-pic.png"
+          :src="myPic"
           alt="Giorgio Messore picture"
           class="absolute top-5 -left-[58%] md:-left-[54%] lg:-left-[51.9%] h-full w-full object-contain opacity-0 animate-fade-slide-in"
         />

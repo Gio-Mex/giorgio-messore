@@ -1,7 +1,7 @@
 <script setup>
 import { reactive, ref } from "vue";
 import { Icon } from "@iconify/vue";
-import bgImage from "@/assets/img/bg-abstract.png";
+import bgImage from "@/assets/img/bg-abstract.webp";
 import socials from "@/assets/contents/contactsContent.js";
 
 const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;

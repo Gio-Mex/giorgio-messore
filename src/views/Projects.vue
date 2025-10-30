@@ -5,10 +5,10 @@ import CanvasParticles from "@/components/CanvasParticles.vue";
 import { Icon } from "@iconify/vue";
 
 const projects = projectsContent.projects;
+const pcImage = new URL("@/assets/img/pc.webp", import.meta.url);
 const activeThumbnail = ref(projects[0].thumbnail);
 const cardRefs = [];
 const windowWidth = ref(window.innerWidth);
-
 const updateActiveThumbnail = () => {
   if (windowWidth < 768) return;
   cardRefs.forEach((card, idx) => {
@@ -61,7 +61,7 @@ onMounted(() => {
             class="realtive max-w-3xl bg-blue-500/5 border border-white/10 rounded-xl p-7 md:px-12 md:py-10 mx-2 lg:mb-0 shadow-md backdrop-blur-sm"
           >
             <span
-              class="absolute flex top-4 right-3 p-2 "
+              class="absolute flex top-4 right-3 p-2"
             >
               <Icon
                 v-for="(bedge, i) in project.bedges"
@@ -72,7 +72,7 @@ onMounted(() => {
                 class="bg-black rounded-full border-s border-indigo-400 py-2 mr-1"
               />
             </span>
-            <h3 class="animated-gradient text-2xl font-semibold mb-3">
+            <h3 class="animated-gradient text-2xl font-semibold mb-3" :class="windowWidth < 768 ? 'w-3/4 overflow-hidden' : ''">
               {{ project.title }}
             </h3>
             <img
@@ -80,6 +80,7 @@ onMounted(() => {
               :src="project.thumbnail"
               alt="Project thumbnail"
               class="mb-3"
+              loading="eager"
             />
             <p class="whitespace-pre-line mb-6">{{ project.description }}</p>
             <p class="text-blue-500 font-bold mb-2">Project features:</p>
@@ -97,6 +98,7 @@ onMounted(() => {
                 Website
               </div>
               <div
+                v-if="project.repoLink"
                 class="btn text-indigo-500 border-1 border-indigo-500 shadow-md hover:shadow-indigo-500/50 active:shadow-none transition-all duration-300"
                 @click="openLink(project.repoLink)"
               >
@@ -116,7 +118,7 @@ onMounted(() => {
         <div class="relative w-[500px] h-[400px] xl:scale-150 rounded-lg">
           <!-- PC frame -->
           <img
-            src="@/assets/img/pc.png"
+            :src="pcImage"
             class="w-full h-full object-cover rounded-xl"
             alt="PC frame"
           />

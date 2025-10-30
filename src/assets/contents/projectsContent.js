@@ -1,13 +1,13 @@
-import ngTechImg from "@/assets/img/thumbnails/ng-TECH-img.png";
-import lookForABookImg from "@/assets/img/thumbnails/look-for-a-book-img.jpeg";
-import angularSocialImg from "@/assets/img/thumbnails/angular-social-img.jpeg";
-import POFImg from "@/assets/img/thumbnails/POF-img.png";
-import orizonImg from "@/assets/img/thumbnails/orizon-img.jpg";
-import happieVeggieImg from "@/assets/img/thumbnails/happie-veggie-img.png";
-import ticTacToeImg from "@/assets/img/thumbnails/tic-tac-toe-img.png";
-import kreasShopImg from "@/assets/img/thumbnails/kreas-shop-img.jpg";
-import pomeliaHotelImg from "@/assets/img/thumbnails/pomelia-img.jpg";
-import work4meImg from "@/assets/img/thumbnails/work-4-me-img.png";
+import ngTechImg from "@/assets/img/thumbnails/ng-TECH-img.webp";
+import lookForABookImg from "@/assets/img/thumbnails/look-for-a-book-img.webp";
+import angularSocialImg from "@/assets/img/thumbnails/angular-social-img.webp";
+import POFImg from "@/assets/img/thumbnails/POF-img.webp";
+import orizonImg from "@/assets/img/thumbnails/orizon-img.webp";
+import happieVeggieImg from "@/assets/img/thumbnails/happie-veggie-img.webp";
+import ticTacToeImg from "@/assets/img/thumbnails/tic-tac-toe-img.webp";
+import pomeliaHotelImg from "@/assets/img/thumbnails/pomelia-img.webp";
+import work4meImg from "@/assets/img/thumbnails/work-4-me-img.webp";
+import changeCutImg from "@/assets/img/thumbnails/change-cut-img.webp";
 
 export default {
   projects: [
@@ -87,21 +87,21 @@ export default {
       siteLink: "https://https://vue-tictactoe-game.netlify.app/",
       repoLink: "https://github.com/Gio-Mex/tic-tac-toe",
     },
-    {
-      bedges: ["mdi:vuejs"],
-      title: "Kreas Shop",
-      description:
-        "This project reproduces the functioning of a hypothetical synthetic meat shop, with the product search function and shopping cart. It was developed with Vue.js in Typescript.",
-      features: [
-        "Optimized for mobile devices first.",
-        "Display a list of all products retrieved from the API, with their name, price and image.",
-        "Possibility to navigate to a dedicated product page.",
-        "Cart page with a list of all products added to the cart, that simulates buying them.",
-      ],
-      thumbnail: kreasShopImg,
-      siteLink: "https://vue-kreas-shop.netlify.app",
-      repoLink: "https://github.com/Gio-Mex/kreas-shop",
-    },
+    // {
+    //   bedges: ["mdi:vuejs"],
+    //   title: "Kreas Shop",
+    //   description:
+    //     "This project reproduces the functioning of a hypothetical synthetic meat shop, with the product search function and shopping cart. It was developed with Vue.js in Typescript.",
+    //   features: [
+    //     "Optimized for mobile devices first.",
+    //     "Display a list of all products retrieved from the API, with their name, price and image.",
+    //     "Possibility to navigate to a dedicated product page.",
+    //     "Cart page with a list of all products added to the cart, that simulates buying them.",
+    //   ],
+    //   thumbnail: kreasShopImg,
+    //   siteLink: "https://vue-kreas-shop.netlify.app",
+    //   repoLink: "https://github.com/Gio-Mex/kreas-shop",
+    // },
     {
       bedges: ["mdi:wordpress"],
       title: "Pomelia Hotel",
@@ -159,6 +159,20 @@ export default {
       thumbnail: work4meImg,
       siteLink: "https://work-4-me.netlify.app",
       repoLink: "https://github.com/Gio-Mex/work-4-me",
+    },
+    {
+      bedges: ["mdi:vuejs", "mdi:firebase"],
+      title: "Change Cut Barber Shop",
+      description:
+        "This is my first real project. It’s a barbershop website. It was built with Vue.js and Firebase.",
+      features: [
+        "Custom Control Panel.",
+        "Admin login with Firebase authentication.",
+        "Data storage and management with Firestore.",
+        "Mobile friendly design.",
+      ],
+      thumbnail: changeCutImg,
+      siteLink: "https://change-cut.netlify.app",
     },
   ],
 };
