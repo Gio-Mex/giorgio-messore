@@ -84,7 +84,7 @@ export default {
         "Clicking on a cell alternates between X and O. The first move is always X.",
       ],
       thumbnail: ticTacToeImg,
-      siteLink: "https://https://vue-tictactoe-game.netlify.app/",
+      siteLink: "https://vue-tictactoe-game.netlify.app/",
       repoLink: "https://github.com/Gio-Mex/tic-tac-toe",
     },
     // {
