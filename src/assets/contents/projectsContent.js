@@ -127,7 +127,7 @@ export default {
         "View all orders with filters by date and products.",
       ],
       thumbnail: POFImg,
-      repoLink: "https://github.com/Gio-Mex/POF-APIs",
+      repoLink: "https://github.com/Gio-Mex/planty-of-food-api",
     },
     {
       bedges: ["mdi:language-php"],
