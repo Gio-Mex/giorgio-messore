@@ -37,7 +37,7 @@ const resizeCanvas = () => {
   const c = canvas.value;
   const dpr = window.devicePixelRatio || 1;
   const width = window.innerWidth;
-  const height = document.documentElement.scrollHeight;
+  const height = window.innerHeight;
 
   c.width = width * dpr;
   c.height = height * dpr;

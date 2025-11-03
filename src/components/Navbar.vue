@@ -40,22 +40,25 @@ const selectLink = (l) => {
 watch(
   () => menuOpen,
   (isOpen) => {
-    const body = document.body
+    const body = document.body;
     if (isOpen) {
-      body.classList.add('scroll-lock')
+      body.classList.add("scroll-lock");
     } else {
-      body.classList.remove('scroll-lock')
+      body.classList.remove("scroll-lock");
     }
   }
-)
+);
 </script>
 
 <template>
   <nav class="fixed top-0 w-full flex items-center p-6 bg-black z-50">
-    <span class="text-xl font-semibold text-blue-500">G</span
-    ><span class="me-2 font-semibold">iorgio</span>
-    <span class="text-xl font-semibold text-indigo-500">M</span
-    ><span class="font-semibold">essore</span>
+    <section class="cursor-pointer" @click="selectLink(links[0])">
+      <span class="text-2xl font-semibold text-blue-500">G</span
+      ><span class="me-2 font-semibold">iorgio</span>
+      <span class="text-2xl font-semibold text-indigo-500">M</span
+      ><span class="font-semibold">essore</span>
+    </section>
+
     <section
       v-if="windowWidth > 768"
       class="w-1/2 flex ml-auto justify-end gap-12"
