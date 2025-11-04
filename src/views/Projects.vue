@@ -44,6 +44,10 @@ onBeforeUnmount(() => {
     if (card) observer.unobserve(card);
   });
 });
+
+const openLink = (link) => {
+  window.open(link, "_blank");
+}
 </script>
 
 <template>
