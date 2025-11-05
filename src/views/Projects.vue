@@ -61,7 +61,7 @@ const openLink = (link) => {
       <span
         class="animated-gradient bg-clip-text text-transparent text-6xl xl:text-8xl"
       >
-        projects </span
+        projects</span
       >.
     </h1>
   </section>
