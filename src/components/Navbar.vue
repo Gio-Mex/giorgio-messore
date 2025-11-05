@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import { onMounted, ref, watch } from "vue";
+import { ref, watch } from "vue";
 import router from "../router";
 
 const windowWidth = ref(window.innerWidth);
@@ -49,10 +49,6 @@ watch(
     }
   }
 );
-
-onMounted(() => {
-  
-})
 </script>
 
 <template>
@@ -116,7 +112,7 @@ onMounted(() => {
       <RouterLink
         class="link"
         :class="
-          link.selected ? 'animated-gradient !decoration-transparent' : ''
+          link.selected || link.path === router.currentRoute.value.path ? 'animated-gradient !decoration-transparent' : ''
         "
         v-for="link in links"
         :key="link.name"
