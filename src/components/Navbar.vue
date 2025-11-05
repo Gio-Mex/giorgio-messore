@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import { ref, watch } from "vue";
+import { onMounted, ref, watch } from "vue";
 import router from "../router";
 
 const windowWidth = ref(window.innerWidth);
@@ -10,7 +10,7 @@ const links = ref([
   {
     name: "Home",
     path: "/",
-    selected: true,
+    selected: false,
   },
   {
     name: "Projects",
@@ -36,6 +36,7 @@ const selectLink = (l) => {
   selectedLink.selected = true;
   router.push(selectedLink.path);
 };
+
 // Scroll block
 watch(
   () => menuOpen,
@@ -48,6 +49,10 @@ watch(
     }
   }
 );
+
+onMounted(() => {
+  
+})
 </script>
 
 <template>
@@ -66,7 +71,7 @@ watch(
       <RouterLink
         class="link"
         :class="
-          link.selected ? 'animated-gradient !decoration-transparent' : ''
+          link.selected || link.path === router.currentRoute.value.path ? 'animated-gradient !decoration-transparent' : ''
         "
         v-for="link in links"
         :key="link.name"

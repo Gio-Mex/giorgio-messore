@@ -85,7 +85,7 @@ export default {
       ],
       thumbnail: ticTacToeImg,
       siteLink: "https://vue-tictactoe-game.netlify.app/",
-      repoLink: "https://github.com/Gio-Mex/tic-tac-toe",
+      repoLink: "https://github.com/Gio-Mex/vue-tic-tac-toe",
     },
     // {
     //   bedges: ["mdi:vuejs"],
