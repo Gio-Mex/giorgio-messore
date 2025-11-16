@@ -50,8 +50,8 @@ onMounted(() => {
         alt="developer"
         loading="eager"
       />
+      <div class="absolute inset-0 bg-blue-800 opacity-10 z-20"></div>
     </div>
-    <div class="absolute inset-0 bg-blue-800 opacity-10 z-20"></div>
   </section>
 
   <!-- Soft Skills -->
