@@ -41,10 +41,9 @@ onMounted(() => {
         web developer</span
       >.
     </h1>
-    <div class="relative h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] w-2/3 md:w-full lg:w-1/3 mt-10 ms-auto rounded-es-full rounded-s-full shadow-md overflow-hidden hover:scale-105 hover:shadow-blue-500/50 transition-transform duration-500">
-      <div
-        class="absolute inset-0 bg-blue-800 opacity-10 z-20"
-      ></div>
+    <div
+      class="relative h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] w-2/3 md:w-full lg:w-1/3 mt-10 ms-auto rounded-es-full rounded-s-full shadow-md overflow-hidden hover:scale-105 hover:shadow-blue-500/50 transition-transform duration-500"
+    >
       <img
         class="absolute top-5 left-2 lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10"
         :src="myPic"
@@ -52,6 +51,7 @@ onMounted(() => {
         loading="eager"
       />
     </div>
+    <div class="absolute inset-0 bg-blue-800 opacity-10 z-20"></div>
   </section>
 
   <!-- Soft Skills -->
